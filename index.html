@@ -1,125 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My Resume</title>
+<head>
+    <style>/* Reset default margins and paddings */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
         
-    </head>
-    <body>
-        <table cellspacing="50" style="background-color: rgb(239, 254, 223); width: 100%;">
-            <tr>
-                <td><img src="https://media.licdn.com/dms/image/C4E03AQGXj5ui912Ecg/profile-displayphoto-shrink_800_800/0/1643297583000?e=1697673600&v=beta&t=-e6RysBeYFqeF3lgFqlT3gSajFuJWEx9aEJWiPGXxJ4" width="150" alt="My Picture"></td>
-                <td>
-                    <b>Rishav Kumar</b><br>
-                    SDE <br>
-                    Darbhanga, Bihar, India <br>
-                    7903017087, <a href="https://mail.google.com/mail/u/0/#sent?compose=new" target="_blank">rishavkumara13@gmail.com</a> <br>
-                    <a href="https://www.linkedin.com/in/rishav-kumar-00689222b/" target="_blank">Linked In Profile</a>
-                </td>
-            </tr>
-        </table>
+        /* Set a background color for the whole page */
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Main container for the content */
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header section */
+        .header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        #fox {
+            width: 150px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        
+        .contact-details {
+            font-size: 14px;
+        }
+        
+        /* Skills and hobbies section */
+        .skills, .hobbies {
+            margin-top: 20px;
+        }
+        
+        .skills h3, .hobbies h3 {
+            margin-bottom: 10px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        /* Profile and education section */
+        .profile, .education {
+            margin-top: 20px;
+        }
+        
+        .profile h3, .education h3 {
+            margin-bottom: 10px;
+        }
+        
+        /* Courses and certifications section */
+        .courses {
+            margin-top: 20px;
+        }
+        
+        .courses ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .courses li {
+            margin-bottom: 10px;
+        }
+        
+        /* Contact Details link */
+        .contact-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        </style>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img id="fox" src="https://media.licdn.com/dms/image/C4E03AQGXj5ui912Ecg/profile-displayphoto-shrink_800_800/0/1643297583000?e=1697673600&v=beta&t=-e6RysBeYFqeF3lgFqlT3gSajFuJWEx9aEJWiPGXxJ4" width="150" alt="My Picture">
+            <div class="contact-details">
+                <b>Rishav Kumar</b><br>
+                SDE <br>
+                Darbhanga, Bihar, India <br>
+                7903017087, <a href="https://mail.google.com/mail/u/0/#sent?compose=new" target="_blank">rishavkumara13@gmail.com</a> <br>
+                <a href="https://www.linkedin.com/in/rishav-kumar-00689222b/" target="_blank">Linked In Profile</a>
+            </div>
+        </div>
         <hr>
 
-        <table cellspacing="50";>
-            <tr>
-                <td>
-                    <h3>Skills</h3>
-                    <table>
-                        <tr>
-                            <td>Python</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>Communication Skills</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>&#9733;&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>C</td>
-                            <td>&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>&#9733;</td>
-                        </tr>
-                        <tr>
-                            <td>SQL</td>
-                            <td>&#9733;</td>
-                        </tr>
-                    </table>
-                    <br>
-                    <br>
+        <div class="content">
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skills-list">
+                    <div class="skill">Python &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="skill">HTML &#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="skill">Communication Skills &#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="skill">Java &#9733;&#9733;&#9733;</div>
+                    <div class="skill">C &#9733;&#9733;</div>
+                    <div class="skill">C++ &#9733;</div>
+                    <div class="skill">SQL &#9733;</div>
+                </div>
+                <br>
+                <br>
 
-                    <h3>Hobbies</h3>
-                    <p>
-                        Coding<br><br>
-                        Exploring New Technologies<br><br>
-                        Travelling<br><br>
-                        Gaming<br><br>
-                    </p>
-                        
-                        
+                <h3>Hobbies</h3>
+                <p>
+                    Coding<br><br>
+                    Exploring New Technologies<br><br>
+                    Travelling<br><br>
+                    Gaming<br><br>
+                </p>
+            </div>
 
-                    
-                
-                </td>
-                
-                <td style="padding-left: 16%;">
-                    <h3>Profile</h3>
-                    <p>
-                        I am a sophomore pursuing B.Tech in Computer Science with AI as my specialization. I am a hardworking student, quick learner and eager to learn more about new technologies. I am proficient in Python programming language and currently working on Full Stack Web Development.
-                    </p>
-                    <hr>
-                    <h3>Education</h3>
-                    <p>
-                        <b>B.Tech(CSE(AI)), <a href="https://www.niet.co.in/" target="_blank">Noida Institute of Engineering and Technology</a>,<br>
-                        Greater Noida</b><br>
-                        Session: August 2021-August 2025<br>
-                        <b>10th and 12th, <a href="http://www.jesusmaryacademy.com/" target="_blank" rel="noopener noreferrer">Jesus & Mary Academy, Darbhanga</a></b><br>
-                    </p>
-                    <hr>
-                    <h3>Courses and Certifications</h3>
-                    <p>
-                        <ul>
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/CDVR7HPELS6C" target="_blank">Programming for Everybody (Getting Started with Python), Coursera </a></li><br>
+            <div class="profile">
+                <h3>Profile</h3>
+                <p>
+                    I am a sophomore pursuing B.Tech in Computer Science with AI as my specialization. I am a hardworking student, quick learner and eager to learn more about new technologies. I am proficient in Python programming language and currently working on Full Stack Web Development.
+                </p>
+                <hr>
+                <h3>Education</h3>
+                <p>
+                    <b>B.Tech(CSE(AI)), <a href="https://www.niet.co.in/" target="_blank">Noida Institute of Engineering and Technology</a>,<br>
+                    Greater Noida</b><br>
+                    Session: August 2021-August 2025<br>
+                    <b>10th and 12th, <a href="http://www.jesusmaryacademy.com/" target="_blank" rel="noopener noreferrer">Jesus & Mary Academy, Darbhanga</a></b><br>
+                </p>
+                <hr>
+                <h3>Courses and Certifications</h3>
+                <p>
+                    <ul>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/CDVR7HPELS6C" target="_blank">Programming for Everybody (Getting Started with Python), Coursera </a></li><br>
 
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/YPY55UUXD8CY" target="_blank">Python Basics, Coursera </a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/YPY55UUXD8CY" target="_blank">Python Basics, Coursera </a></li><br>
                             
-                            <li><a href="https://drive.google.com/file/d/1Eq6E8g4fk3CUaibN3RvSd7YwWTr637hd/view?usp=drive_link" target="_blank">Programming Fundamentals using Python, Infosys Springboard </a></li><br>
+                        <li><a href="https://drive.google.com/file/d/1Eq6E8g4fk3CUaibN3RvSd7YwWTr637hd/view?usp=drive_link" target="_blank">Programming Fundamentals using Python, Infosys Springboard </a></li><br>
 
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/MEHD2698ZJCB" target="_blank">Python Data Structures, Coursera</a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/MEHD2698ZJCB" target="_blank">Python Data Structures, Coursera</a></li><br>
 
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/XP2Q8ELQJVR6" target="_blank">Python for Data Science, AI & Development, Coursera</a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/XP2Q8ELQJVR6" target="_blank">Python for Data Science, AI & Development, Coursera</a></li><br>
 
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/XAZ45ZRZHPUX" target="_blank">Introduction to Artificial Intelligence (AI), Coursera</a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/XAZ45ZRZHPUX" target="_blank">Introduction to Artificial Intelligence (AI), Coursera</a></li><br>
   
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/T29ZDDQUQCTR" target="_blank">Getting Started with AI using IBM Watson, Coursera </a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/T29ZDDQUQCTR" target="_blank">Getting Started with AI using IBM Watson, Coursera </a></li><br>
 
-                            <li> <a href="https://www.coursera.org/account/accomplishments/certificate/K8MPFEPXJBWQ" target="_blank">Building AI Powered Chatbots Without Programming, Coursera</a></li><br>
+                        <li> <a href="https://www.coursera.org/account/accomplishments/certificate/K8MPFEPXJBWQ" target="_blank">Building AI Powered Chatbots Without Programming, Coursera</a></li><br>
                             
-                            <li> <a href="https://www.coursera.org/account/accomplishments/certificate/DWHQWURS39YN" target="_blank">Human-Centered Design for Inclusive Innovation, Coursera</a></li><br>
+                        <li> <a href="https://www.coursera.org/account/accomplishments/certificate/DWHQWURS39YN" target="_blank">Human-Centered Design for Inclusive Innovation, Coursera</a></li><br>
                             
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/VHUD3YFPD53H" target="_blank">Cryptography, Coursera </a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/VHUD3YFPD53H" target="_blank">Cryptography, Coursera </a></li><br>
                             
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/5GSAE3KRMRKY" target="_blank">Blockchain Basics, Coursera </a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/5GSAE3KRMRKY" target="_blank">Blockchain Basics, Coursera </a></li><br>
 
-                            <li><a href="https://drive.google.com/file/d/10MUau-bpNgdWYuo6zErIyX_Ck6Ipw7In/view?usp=drive_link" target="_blank">Machine Learning Onramp, MathWorks | Training Services</a></li><br>
+                        <li><a href="https://drive.google.com/file/d/10MUau-bpNgdWYuo6zErIyX_Ck6Ipw7In/view?usp=drive_link" target="_blank">Machine Learning Onramp, MathWorks | Training Services</a></li><br>
 
-                            <li><a href="https://www.coursera.org/account/accomplishments/certificate/MPCHXRKU84VC" target="_blank">Use Canva to Create Desktop and Mobile-friendly Web Pages, Coursera</a></li><br>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/MPCHXRKU84VC" target="_blank">Use Canva to Create Desktop and Mobile-friendly Web Pages, Coursera</a></li><br>
                         
-                            <li><a href="https://drive.google.com/file/d/1h_H7dYw7wgXx7cncqzX1EL4Sx6aAK_7o/view?usp=drive_link" target="_blank">Programming Using Java, Infosys Springboard</a></li><br>
-                        </ul>
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <p><a href="Contact Info.html" target="_blank">My contact Details</a></p>
-    </body>
+                        <li><a href="https://drive.google.com/file/d/1h_H7dYw7wgXx7cncqzX1EL4Sx6aAK_7o/view?usp=drive_link" target="_blank">Programming Using Java, Infosys Springboard</a></li><br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p><a href="Contact Info.html" target="_blank">My contact Details</a></p>
+</body>
 </html>
